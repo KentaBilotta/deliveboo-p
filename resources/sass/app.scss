@@ -1,0 +1,59 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+body{
+    background-color: white;
+}
+.copertina{
+    padding-top: 8em;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mycard{
+    position: relative;
+    border: 2px solid $card-blue;
+    font-size: 0.8rem;
+    line-height: 20px;
+
+    .mycard-button{
+    background-color: $card-blue;
+    position: absolute;
+    bottom: -5px;
+    margin: auto;
+    font-size: 0.8rem;
+    box-shadow: 3px 3px 5px black;
+    text-decoration: none;
+    padding: 0.4rem;
+
+        &:hover{
+            background-color: $verde-speranza-non-si-perde;
+        }
+    }
+}
+
+.category{
+    color: $category-grey;
+    text-decoration: none;
+}
+@include media-breakpoint-down(sm){
+    .order-link{
+        display: none;
+    }
+    .order-link-due{
+        min-width: 60px;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .contenitoremio{
+        display: flex;
+        flex-direction: column;
+    }
+  }
